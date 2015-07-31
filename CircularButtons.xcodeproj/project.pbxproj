@@ -13,9 +13,14 @@
 		3F36BD231B6B713C00464AAA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F36BD221B6B713C00464AAA /* Images.xcassets */; };
 		3F36BD261B6B713C00464AAA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F36BD241B6B713C00464AAA /* LaunchScreen.xib */; };
 		3F36BD321B6B713C00464AAA /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F36BD311B6B713C00464AAA /* ExampleTests.swift */; };
-		3F36BD3D1B6B719F00464AAA /* CircularButtonPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F36BD3A1B6B719F00464AAA /* CircularButtonPlus.swift */; };
-		3F36BD3E1B6B719F00464AAA /* CircularButtonMinus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F36BD3B1B6B719F00464AAA /* CircularButtonMinus.swift */; };
-		3F36BD3F1B6B719F00464AAA /* UIView+Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F36BD3C1B6B719F00464AAA /* UIView+Drawing.swift */; };
+		3F36BD4B1B6B746E00464AAA /* CircularButtons.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F36BD4A1B6B746E00464AAA /* CircularButtons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F36BD511B6B746F00464AAA /* CircularButtons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F36BD461B6B746E00464AAA /* CircularButtons.framework */; };
+		3F36BD5A1B6B746F00464AAA /* CircularButtonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F36BD591B6B746F00464AAA /* CircularButtonsTests.swift */; };
+		3F36BD5D1B6B746F00464AAA /* CircularButtons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F36BD461B6B746E00464AAA /* CircularButtons.framework */; };
+		3F36BD5E1B6B746F00464AAA /* CircularButtons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F36BD461B6B746E00464AAA /* CircularButtons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3F36BD691B6B74A600464AAA /* CircularButtonMinus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F36BD661B6B74A600464AAA /* CircularButtonMinus.swift */; };
+		3F36BD6A1B6B74A600464AAA /* CircularButtonPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F36BD671B6B74A600464AAA /* CircularButtonPlus.swift */; };
+		3F36BD6B1B6B74A600464AAA /* UIView+Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F36BD681B6B74A600464AAA /* UIView+Drawing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +31,42 @@
 			remoteGlobalIDString = 3F36BD161B6B713C00464AAA;
 			remoteInfo = Example;
 		};
+		3F36BD521B6B746F00464AAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F36BCE61B6B704600464AAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F36BD451B6B746E00464AAA;
+			remoteInfo = CircularButtons;
+		};
+		3F36BD541B6B746F00464AAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F36BCE61B6B704600464AAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F36BD161B6B713C00464AAA;
+			remoteInfo = Example;
+		};
+		3F36BD5B1B6B746F00464AAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F36BCE61B6B704600464AAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F36BD451B6B746E00464AAA;
+			remoteInfo = CircularButtons;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F36BD621B6B746F00464AAA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3F36BD5E1B6B746F00464AAA /* CircularButtons.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3F36BD171B6B713C00464AAA /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,9 +79,15 @@
 		3F36BD2B1B6B713C00464AAA /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F36BD301B6B713C00464AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F36BD311B6B713C00464AAA /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
-		3F36BD3A1B6B719F00464AAA /* CircularButtonPlus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularButtonPlus.swift; sourceTree = "<group>"; };
-		3F36BD3B1B6B719F00464AAA /* CircularButtonMinus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularButtonMinus.swift; sourceTree = "<group>"; };
-		3F36BD3C1B6B719F00464AAA /* UIView+Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Drawing.swift"; sourceTree = "<group>"; };
+		3F36BD461B6B746E00464AAA /* CircularButtons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CircularButtons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F36BD491B6B746E00464AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F36BD4A1B6B746E00464AAA /* CircularButtons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularButtons.h; sourceTree = "<group>"; };
+		3F36BD501B6B746F00464AAA /* CircularButtonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircularButtonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F36BD581B6B746F00464AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F36BD591B6B746F00464AAA /* CircularButtonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButtonsTests.swift; sourceTree = "<group>"; };
+		3F36BD661B6B74A600464AAA /* CircularButtonMinus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularButtonMinus.swift; sourceTree = "<group>"; };
+		3F36BD671B6B74A600464AAA /* CircularButtonPlus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularButtonPlus.swift; sourceTree = "<group>"; };
+		3F36BD681B6B74A600464AAA /* UIView+Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Drawing.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F36BD5D1B6B746F00464AAA /* CircularButtons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,15 +106,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3F36BD421B6B746E00464AAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F36BD4D1B6B746F00464AAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F36BD511B6B746F00464AAA /* CircularButtons.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3F36BCE51B6B704600464AAA = {
 			isa = PBXGroup;
 			children = (
-				3F36BD391B6B718D00464AAA /* Source */,
 				3F36BD181B6B713C00464AAA /* Example */,
 				3F36BD2E1B6B713C00464AAA /* ExampleTests */,
+				3F36BD471B6B746E00464AAA /* CircularButtons */,
+				3F36BD561B6B746F00464AAA /* CircularButtonsTests */,
 				3F36BCEF1B6B704600464AAA /* Products */,
 			);
 			indentWidth = 2;
@@ -80,6 +143,8 @@
 			children = (
 				3F36BD171B6B713C00464AAA /* Example.app */,
 				3F36BD2B1B6B713C00464AAA /* ExampleTests.xctest */,
+				3F36BD461B6B746E00464AAA /* CircularButtons.framework */,
+				3F36BD501B6B746F00464AAA /* CircularButtonsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,17 +187,55 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3F36BD391B6B718D00464AAA /* Source */ = {
+		3F36BD471B6B746E00464AAA /* CircularButtons */ = {
 			isa = PBXGroup;
 			children = (
-				3F36BD3A1B6B719F00464AAA /* CircularButtonPlus.swift */,
-				3F36BD3B1B6B719F00464AAA /* CircularButtonMinus.swift */,
-				3F36BD3C1B6B719F00464AAA /* UIView+Drawing.swift */,
+				3F36BD661B6B74A600464AAA /* CircularButtonMinus.swift */,
+				3F36BD671B6B74A600464AAA /* CircularButtonPlus.swift */,
+				3F36BD681B6B74A600464AAA /* UIView+Drawing.swift */,
+				3F36BD4A1B6B746E00464AAA /* CircularButtons.h */,
+				3F36BD481B6B746E00464AAA /* Supporting Files */,
 			);
-			path = Source;
+			path = CircularButtons;
+			sourceTree = "<group>";
+		};
+		3F36BD481B6B746E00464AAA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F36BD491B6B746E00464AAA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F36BD561B6B746F00464AAA /* CircularButtonsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F36BD591B6B746F00464AAA /* CircularButtonsTests.swift */,
+				3F36BD571B6B746F00464AAA /* Supporting Files */,
+			);
+			path = CircularButtonsTests;
+			sourceTree = "<group>";
+		};
+		3F36BD571B6B746F00464AAA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F36BD581B6B746F00464AAA /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3F36BD431B6B746E00464AAA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F36BD4B1B6B746E00464AAA /* CircularButtons.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		3F36BD161B6B713C00464AAA /* Example */ = {
@@ -142,10 +245,12 @@
 				3F36BD131B6B713C00464AAA /* Sources */,
 				3F36BD141B6B713C00464AAA /* Frameworks */,
 				3F36BD151B6B713C00464AAA /* Resources */,
+				3F36BD621B6B746F00464AAA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3F36BD5C1B6B746F00464AAA /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -170,6 +275,43 @@
 			productReference = 3F36BD2B1B6B713C00464AAA /* ExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		3F36BD451B6B746E00464AAA /* CircularButtons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F36BD5F1B6B746F00464AAA /* Build configuration list for PBXNativeTarget "CircularButtons" */;
+			buildPhases = (
+				3F36BD411B6B746E00464AAA /* Sources */,
+				3F36BD421B6B746E00464AAA /* Frameworks */,
+				3F36BD431B6B746E00464AAA /* Headers */,
+				3F36BD441B6B746E00464AAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CircularButtons;
+			productName = CircularButtons;
+			productReference = 3F36BD461B6B746E00464AAA /* CircularButtons.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3F36BD4F1B6B746F00464AAA /* CircularButtonsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F36BD631B6B746F00464AAA /* Build configuration list for PBXNativeTarget "CircularButtonsTests" */;
+			buildPhases = (
+				3F36BD4C1B6B746F00464AAA /* Sources */,
+				3F36BD4D1B6B746F00464AAA /* Frameworks */,
+				3F36BD4E1B6B746F00464AAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F36BD531B6B746F00464AAA /* PBXTargetDependency */,
+				3F36BD551B6B746F00464AAA /* PBXTargetDependency */,
+			);
+			name = CircularButtonsTests;
+			productName = CircularButtonsTests;
+			productReference = 3F36BD501B6B746F00464AAA /* CircularButtonsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -183,6 +325,13 @@
 						CreatedOnToolsVersion = 6.4;
 					};
 					3F36BD2A1B6B713C00464AAA = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 3F36BD161B6B713C00464AAA;
+					};
+					3F36BD451B6B746E00464AAA = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					3F36BD4F1B6B746F00464AAA = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 3F36BD161B6B713C00464AAA;
 					};
@@ -203,6 +352,8 @@
 			targets = (
 				3F36BD161B6B713C00464AAA /* Example */,
 				3F36BD2A1B6B713C00464AAA /* ExampleTests */,
+				3F36BD451B6B746E00464AAA /* CircularButtons */,
+				3F36BD4F1B6B746F00464AAA /* CircularButtonsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -225,6 +376,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3F36BD441B6B746E00464AAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F36BD4E1B6B746F00464AAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -232,11 +397,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F36BD3D1B6B719F00464AAA /* CircularButtonPlus.swift in Sources */,
-				3F36BD3F1B6B719F00464AAA /* UIView+Drawing.swift in Sources */,
 				3F36BD1E1B6B713C00464AAA /* ViewController.swift in Sources */,
 				3F36BD1C1B6B713C00464AAA /* AppDelegate.swift in Sources */,
-				3F36BD3E1B6B719F00464AAA /* CircularButtonMinus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +410,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3F36BD411B6B746E00464AAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F36BD6A1B6B74A600464AAA /* CircularButtonPlus.swift in Sources */,
+				3F36BD691B6B74A600464AAA /* CircularButtonMinus.swift in Sources */,
+				3F36BD6B1B6B74A600464AAA /* UIView+Drawing.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F36BD4C1B6B746F00464AAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F36BD5A1B6B746F00464AAA /* CircularButtonsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -255,6 +435,21 @@
 			isa = PBXTargetDependency;
 			target = 3F36BD161B6B713C00464AAA /* Example */;
 			targetProxy = 3F36BD2C1B6B713C00464AAA /* PBXContainerItemProxy */;
+		};
+		3F36BD531B6B746F00464AAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F36BD451B6B746E00464AAA /* CircularButtons */;
+			targetProxy = 3F36BD521B6B746F00464AAA /* PBXContainerItemProxy */;
+		};
+		3F36BD551B6B746F00464AAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F36BD161B6B713C00464AAA /* Example */;
+			targetProxy = 3F36BD541B6B746F00464AAA /* PBXContainerItemProxy */;
+		};
+		3F36BD5C1B6B746F00464AAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F36BD451B6B746E00464AAA /* CircularButtons */;
+			targetProxy = 3F36BD5B1B6B746F00464AAA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -457,6 +652,82 @@
 			};
 			name = Release;
 		};
+		3F36BD601B6B746F00464AAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				INFOPLIST_FILE = CircularButtons/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3F36BD611B6B746F00464AAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				INFOPLIST_FILE = CircularButtons/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3F36BD641B6B746F00464AAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				INFOPLIST_FILE = CircularButtonsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+			};
+			name = Debug;
+		};
+		3F36BD651B6B746F00464AAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				INFOPLIST_FILE = CircularButtonsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -482,6 +753,22 @@
 			buildConfigurations = (
 				3F36BD351B6B713C00464AAA /* Debug */,
 				3F36BD361B6B713C00464AAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3F36BD5F1B6B746F00464AAA /* Build configuration list for PBXNativeTarget "CircularButtons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F36BD601B6B746F00464AAA /* Debug */,
+				3F36BD611B6B746F00464AAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3F36BD631B6B746F00464AAA /* Build configuration list for PBXNativeTarget "CircularButtonsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F36BD641B6B746F00464AAA /* Debug */,
+				3F36BD651B6B746F00464AAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
