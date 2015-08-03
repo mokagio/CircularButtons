@@ -18,6 +18,12 @@ Just for fun actually. As a learning experience with microframeworks, `IBDesigna
 github "mokagio/CircularButtons"
 ```
 
+### Podspec
+
+```
+pod 'CircularButton'
+```
+
 ## Usage
 
 _TODO_
