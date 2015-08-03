@@ -4,7 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,39 +19,148 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbo-Ik-mze" userLabel="Minus" customClass="CircularButtonMinus" customModule="CircularButtons">
-                                <rect key="frame" x="270" y="209" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="DIf-Rd-1eQ"/>
-                                    <constraint firstAttribute="width" secondItem="qbo-Ik-mze" secondAttribute="height" multiplier="1:1" id="rjp-NC-Dcz"/>
-                                </constraints>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nrm-9u-MbZ" userLabel="Minus" customClass="CircularButtonPlus" customModule="CircularButtons">
-                                <rect key="frame" x="270" y="316" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="4f4-wX-oKY"/>
-                                    <constraint firstAttribute="width" secondItem="Nrm-9u-MbZ" secondAttribute="height" multiplier="1:1" id="Snz-8q-Jam"/>
-                                </constraints>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="kdw-Cg-YT8">
+                                <rect key="frame" x="40" y="237" width="520" height="126"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="BXr-pU-6PK">
+                                        <rect key="frame" x="0.0" y="0.0" width="520" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8W-Hd-bCs" userLabel="Plus 2" customClass="CircularButtonPlus" customModule="CircularButtons">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="G8W-Hd-bCs" secondAttribute="height" multiplier="1:1" id="AcP-te-LYJ"/>
+                                                    <constraint firstAttribute="width" constant="60" id="CR9-wJ-rID"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.50196081399917603" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="plusColor">
+                                                        <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="plusWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="plusRatio">
+                                                        <real key="value" value="0.69999999999999996"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbo-Ik-mze" userLabel="Minus" customClass="CircularButtonMinus" customModule="CircularButtons">
+                                                <rect key="frame" x="230" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="DIf-Rd-1eQ"/>
+                                                    <constraint firstAttribute="width" secondItem="qbo-Ik-mze" secondAttribute="height" multiplier="1:1" id="rjp-NC-Dcz"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIM-hf-Lgb" userLabel="Plus 3" customClass="CircularButtonPlus" customModule="CircularButtons">
+                                                <rect key="frame" x="460" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="cUR-z7-Ift"/>
+                                                    <constraint firstAttribute="width" secondItem="pIM-hf-Lgb" secondAttribute="height" multiplier="1:1" id="xAh-8C-p9r"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="plusRatio">
+                                                        <real key="value" value="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="plusWidth">
+                                                        <real key="value" value="11"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="JjA-2w-SRY">
+                                        <rect key="frame" x="0.0" y="66" width="520" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2l4-u4-vFi" userLabel="Minus 2" customClass="CircularButtonMinus" customModule="CircularButtons">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="2l4-u4-vFi" secondAttribute="height" multiplier="1:1" id="04Q-Ds-fsf"/>
+                                                    <constraint firstAttribute="width" constant="60" id="hdJ-Rz-rcZ"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minusRatio">
+                                                        <real key="value" value="0.29999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="minusColor">
+                                                        <color key="value" red="0.50196081399917603" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nrm-9u-MbZ" userLabel="Plus" customClass="CircularButtonPlus" customModule="CircularButtons">
+                                                <rect key="frame" x="230" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="4f4-wX-oKY"/>
+                                                    <constraint firstAttribute="width" secondItem="Nrm-9u-MbZ" secondAttribute="height" multiplier="1:1" id="Snz-8q-Jam"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSu-WX-k7d" userLabel="Minus 3" customClass="CircularButtonMinus" customModule="CircularButtons">
+                                                <rect key="frame" x="460" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="Htk-Dd-FSV"/>
+                                                    <constraint firstAttribute="width" secondItem="QSu-WX-k7d" secondAttribute="height" multiplier="1:1" id="jXB-FE-pZu"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="minusColor">
+                                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="Nrm-9u-MbZ" secondAttribute="centerX" id="4Z8-B5-CRZ"/>
-                            <constraint firstItem="Nrm-9u-MbZ" firstAttribute="width" secondItem="Nrm-9u-MbZ" secondAttribute="height" multiplier="1:1" id="JpE-3X-WAe"/>
-                            <constraint firstAttribute="centerX" secondItem="qbo-Ik-mze" secondAttribute="centerX" id="blW-dk-ip9"/>
-                            <constraint firstAttribute="centerY" secondItem="qbo-Ik-mze" secondAttribute="centerY" multiplier="1.25" constant="1" id="fl4-Xp-XM9"/>
-                            <constraint firstItem="Nrm-9u-MbZ" firstAttribute="top" secondItem="qbo-Ik-mze" secondAttribute="bottom" constant="47" id="zYA-gn-3u3"/>
+                            <constraint firstItem="kdw-Cg-YT8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UhC-yD-o56"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kdw-Cg-YT8" secondAttribute="bottom" constant="164" id="fQX-cP-Krb"/>
+                            <constraint firstItem="kdw-Cg-YT8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="216" id="oKq-HK-Y2b"/>
+                            <constraint firstItem="kdw-Cg-YT8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="z1D-co-lcQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kdw-Cg-YT8" secondAttribute="trailing" constant="20" id="zVP-3M-wA4"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="oKq-HK-Y2b"/>
+                                <exclude reference="fQX-cP-Krb"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="435" y="378"/>
         </scene>
     </scenes>
 </document>
