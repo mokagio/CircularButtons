@@ -21,7 +21,7 @@ github "mokagio/CircularButtons"
 ### Podspec
 
 ```
-pod 'CircularButton'
+pod 'CircularButtons'
 ```
 
 ## Usage
